@@ -1,0 +1,40 @@
+body {
+  display: grid;
+  place-items: center;
+  height: 100vh;
+  margin: 0;
+  background-color: #183aab; /* Indigo 9*/
+  font-family: font-s;
+}
+
+.container {
+  background-color: #fff;
+  width: 25rem;
+  height: 35rem;
+  border-radius: 2rem;
+}
+
+.search-box {
+  display: flex;
+  flex-direction: row;
+  font-size: 1.5rem;
+  border-style: groove;
+  border-color: black;
+  border-radius: 2rem;
+}
+
+.location-icon {
+  display: flex;
+  align-items: center;
+}
+
+.city-name {
+  flex-grow: 2;
+  padding-left: 0.5rem;
+}
+
+.search-button {
+  background-color: transparent;
+  border-style: none;
+  font-size: 1.5rem;
+}
