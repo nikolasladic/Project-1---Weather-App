@@ -5,7 +5,7 @@
     <link name="font-s" rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Tinos:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700;800;900&family=Roboto:wght@300;400;500;700;900&display=swap"
       rel="stylesheet"
     />
 
@@ -15,25 +15,17 @@
     <title>Project #1 - Weather App</title>
   </head>
   <body>
+    <!-- <a href="/image/clear-sky.jpg" class="background-image"></a> -->
     <div class="container">
-      <div class="search-box">
-        <div class="location-icon">
-          <ion-icon name="location-outline"></ion-icon>
-        </div>
-        <p class="city-name">City Name</p>
-        <button class="search-button">
-          <ion-icon name="search-outline"></ion-icon>
-        </button>
+      <div class="location-display">
+        <input type="text" />
+        <div class="temperature">17</div>
+        <div class="weather-status">Mostly Clear</div>
+      </div>
+      <div class="high-low">
+        <div class="high-temp">24</div>
+        <div class="low-temp">16</div>
       </div>
     </div>
-
-    <script
-      type="module"
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"
-    ></script>
-    <script
-      nomodule
-      src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"
-    ></script>
   </body>
 </html>
