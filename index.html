@@ -18,13 +18,38 @@
     <!-- <a href="/image/clear-sky.jpg" class="background-image"></a> -->
     <div class="container">
       <div class="location-display">
-        <input type="text" />
-        <div class="temperature">17</div>
+        <input
+          type="text"
+          class="cur-location"
+          placeholder="Current Location"
+        />
+        <div class="temperature">17°</div>
         <div class="weather-status">Mostly Clear</div>
+        <div class="high-low">
+          <div class="high-temp">H:24°</div>
+          <div class="low-temp">L:16°</div>
+        </div>
       </div>
-      <div class="high-low">
-        <div class="high-temp">24</div>
-        <div class="low-temp">16</div>
+    </div>
+
+    <div class="forecast">
+      <h4 class="hourly-forecast">Hourly Forecast</h4>
+      <div class="forecast-container">
+        <div class="now">NOW</div>
+        <!-- <div class="one-hour">10pm</div> -->
+        <img src="image/cloud.png" class="weather-icon" alt="weather" />
+        <!-- <img src="image/cloud.png" class="weather-icon" alt="Cloud image" /> -->
+        <p class="cur-temp">17°</p>
+      </div>
+    </div>
+
+    <div class="weekly-forecast-preview">
+      <h4 class="weekly-forecast">Weekly Forecast</h4>
+      <div class="daily-forecast">
+        <div class="today">Today</div>
+        <img class="weather-icon" src="image/sunny.png" alt="weather" />
+        <h6 class="weather-status">Mostly Clear</h6>
+        <p class="cur-temp">17°</p>
       </div>
     </div>
   </body>

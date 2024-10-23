@@ -1,15 +1,114 @@
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  font-family: "Roboto", sans-serif;
+  color: #fff;
+  font-size: 30px;
+}
 body {
-  /* background-image: url("/image/clear-sky.jpg"); */
+  background-image: url("/image/clear-sky.jpg");
   background-size: 100%;
   background-repeat: no-repeat;
-  background-position: center;
+  background-position: top;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
 }
 
 .container {
-  display: fex;
-  flex-wrap: wap;
-  flex-direction: column-reverse;
+  align-items: center;
+  flex-direction: column;
+}
+
+.location-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   justify-content: center;
-  width: 25rem;
-  height: 58rem;
+  flex-wrap: wrap;
+}
+
+.cur-location {
+  text-decoration: none;
+  border-radius: 10px;
+  background-color: transparent;
+}
+
+.temperature {
+  font-size: 90px;
+  font-weight: 100;
+}
+
+.weather-status {
+  font-size: 14px;
+  font-weight: 600;
+  justify-self: center;
+}
+
+.high-low {
+  display: flex;
+  flex-direction: row;
+  font-size: 8px;
+  padding-bottom: 32px;
+}
+
+.high-temp {
+  padding-right: 20px;
+}
+
+.forecast {
+  padding: 10px;
+  display: grid;
+  column-gap: 10px;
+  background-color: #38516f;
+  border-radius: 12px;
+}
+
+.forecast-container {
+  display: grid;
+  width: 48px;
+  grid-template-rows: 0.5fr 0.5fr;
+  grid-template-columns: 1fr;
+}
+
+.now {
+  justify-self: center;
+  font-size: 12px;
+  height: 16px;
+}
+
+.weather-icon {
+  justify-self: center;
+  height: 48px;
+}
+
+.cur-temp {
+  font-size: 16px;
+  justify-self: center;
+}
+
+/* ///////////////////////////////////// */
+
+.weekly-forecast-preview {
+  margin: 16px;
+  padding: 10px;
+  display: grid;
+  background-color: #38516f;
+  border-radius: 12px;
+}
+
+.weekly-forecast {
+  padding-bottom: 18px;
+}
+
+.daily-forecast {
+  display: grid;
+  grid-template-columns: 0.5fr;
+}
+
+.today {
+  font-size: 16px;
+  justify-self: center;
 }
